@@ -2,9 +2,10 @@
 🚀 A hands-on journey from RTL to GDSII with open-source EDA tools. This repo documents my work in the VSD RISC-V SoC Tapeout Program, covering synthesis, simulation, floorplanning, placement, routing, and sign-off checks. It serves as both a learning log and a reference for ASIC design with OpenLane.
 
 Welcome to my repository! 🎉  
-This project documents my hands-on experience with the **RISC-V Reference SoC Tapeout Program (VSD)**.  
+This project documents my hands-on experience with the RISC-V Reference SoC Tapeout Program (VSD).  
 
-👉 The goal: take a design from **RTL ➝ Synthesis ➝ Physical Design ➝ GDSII ➝ Tapeout Ready** using **open-source tools** only.  
+👉 The goal: take a design from 🔴 RTL Design ➝ 🔵 Synthesis ➝ 🟣 Physical Design ➝ 🎯 Tapeout Ready
+ using **open-source tools** only.  
 
 
 🌱 Week 0 – Foundation Week  
@@ -47,7 +48,8 @@ This week focused on setting up the **complete RTL-to-GDSII toolchain**.
 
  🙏 Acknowledgments  
 
-A huge thanks to @kunalg123 and the VSD TEAM for leading this initiative 💡  
+A huge thanks to [![Kunal Ghosh](https://img.shields.io/badge/GitHub-Kunal%20Ghosh-black?logo=github)](https://github.com/kunalghosh)
+ and the VSD TEAM for leading this initiative 💡  
 
 Also grateful to the supporting organizations:  
 
