@@ -118,7 +118,7 @@ Use the dropdowns below to explore **each day interactively** 👇
 <details>
 <summary>💻 Commands</summary>
 
-```bash
+``bash
 sudo apt update
 sudo apt install iverilog gtkwave yosys build-essential git
 git clone <your-repo-url>
@@ -148,7 +148,7 @@ module counter (
     output reg [3:0] q
 );
 always @(posedge clk or negedge rst_n) begin
-    if (!rst_n) q <= 4'b0;
+    if (!rst_n) q <= 4 b0;
     else q <= q + 1;
 end
 endmodule
@@ -229,7 +229,7 @@ Completed assignment for basic gates
 
 # 📘 `week1/day01_setup.md`
 
-```markdown
+``markdown
 # ⚡ Day 01 — Setup  
 
 ✅ Installed tools  
@@ -239,7 +239,7 @@ Completed assignment for basic gates
 
 
 ## 🔧 Commands Used
-```bash
+``bash
 sudo apt update
 sudo apt install iverilog gtkwave yosys build-essential git
 git clone <your-repo-url>
@@ -257,11 +257,10 @@ Installed Icarus Verilog for simulation
 Installed GTKWave for waveform viewing
 
 
----
 
 # 📘 `week1/day02_rtl_basics.md`
 
-```markdown
+``markdown
 # ⚡ Day 02 — RTL Basics  
 
 ✅ Learned the concept of RTL  
@@ -270,14 +269,14 @@ Installed GTKWave for waveform viewing
 
 
 ## 💻 Sample RTL Code
-```verilog
+``verilog
 module counter (
     input clk,
     input rst_n,
     output reg [3:0] q
 );
 always @(posedge clk or negedge rst_n) begin
-    if (!rst_n) q <= 4'b0;
+    if (!rst_n) q <= 4 b0;
     else q <= q + 1;
 end
 endmodule
