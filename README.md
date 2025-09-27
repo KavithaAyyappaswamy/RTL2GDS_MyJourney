@@ -230,7 +230,7 @@ Completed assignment for basic gates
 # 📘 `week1/day01_setup.md`
 
 ``markdown
-# ⚡ Day 01 — Setup  
+⚡ Day 01 — Setup  
 
 ✅ Installed tools  
 ✅ Verified environment  
@@ -238,7 +238,7 @@ Completed assignment for basic gates
 
 
 
-## 🔧 Commands Used
+🔧 Commands Used
 ``bash
 sudo apt update
 sudo apt install iverilog gtkwave yosys build-essential git
@@ -268,7 +268,7 @@ Installed GTKWave for waveform viewing
 
 
 
-## 💻 Sample RTL Code
+💻 Sample RTL Code
 ``verilog
 module counter (
     input clk,
@@ -280,6 +280,103 @@ always @(posedge clk or negedge rst_n) begin
     else q <= q + 1;
 end
 endmodule
+
+💻 Commands
+iverilog -o tb_counter.vvp tb_counter.v counter.v
+vvp tb_counter.vvp
+gtkwave counter.vcd
+
+📝 Notes
+
+RTL describes data movement between registers
+
+Used in simulation, synthesis, and verification
+
+
+# 📘 `week1/day03_verilog_intro.md`
+
+``markdown
+# ⚡ Day 03 — Verilog Introduction  
+
+✅ Started learning Verilog HDL  
+✅ Wrote first basic logic gate  
+
+
+
+💻 Example — AND Gate
+``verilog
+module and_gate(input a, input b, output y);
+    assign y = a & b;
+endmodule
+
+📝 Notes
+
+Verilog is a hardware description language
+
+Supports modules, ports, operators, and testbenches
+
+
+# 📘 `week1/day04_simulation.md`
+
+``markdown
+# ⚡ Day 04 — Simulation  
+
+✅ Ran Verilog simulation using Icarus Verilog  
+✅ Viewed waveforms in GTKWave  
+
+---
+
+## 💻 Commands
+``bash
+iverilog -o tb_and.vvp tb_and.v and_gate.v
+vvp tb_and.vvp
+gtkwave dump.vcd
+
+📝 Notes
+
+Simulation verifies logical correctness
+
+Testbench is crucial for verification
+
+Waveform viewing helps debug signals
+
+
+
+# 📘 `week1/day05_assignment.md`
+
+``markdown
+# ⚡ Day 05 — Assignment  
+
+🎯 Task: Implement basic logic gates in Verilog and simulate  
+
+---
+
+## ✅ Gates
+| Gate | Done? |
+|------|-------|
+| AND  | ✅    |
+| OR   | ✅    |
+| NOT  | ✅    |
+| NAND | ⬜    |
+| NOR  | ⬜    |
+| XOR  | ⬜    |
+
+
+## 💻 Example — OR Gate
+``verilog
+module or_gate(input a, input b, output y);
+    assign y = a | b;
+endmodule
+
+📝 Notes
+
+Designed gates using continuous assignment
+
+Simulated each with a testbench
+
+Next step: combinational circuits using these gates
+
+
 
 
 
