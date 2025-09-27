@@ -229,26 +229,27 @@ Completed assignment for basic gates
 
 # 📘 `week1/day01_setup.md`
 
-``markdown
-⚡ Day 01 — Setup  
-
+```markdown  
 ✅ Installed tools  
 ✅ Verified environment  
 ✅ First simulation run successful  
 
-
+```
 
 🔧 Commands Used
-``bash
+```bash
 sudo apt update
 sudo apt install iverilog gtkwave yosys build-essential git
 git clone <your-repo-url>
 cd week1
+```
 
 # Test simulation
+```
 iverilog -o tb_blink.vvp tb_blink.v blink.v
 vvp tb_blink.vvp
 gtkwave dump.vcd
+```
 
 📝 Notes
 
@@ -260,16 +261,16 @@ Installed GTKWave for waveform viewing
 
 # 📘 `week1/day02_rtl_basics.md`
 
-``markdown
-# ⚡ Day 02 — RTL Basics  
+# ⚡ Day 02 — RTL Basics 
 
+```markdown
 ✅ Learned the concept of RTL  
 ✅ Understood registers and data flow  
-
+```
 
 
 💻 Sample RTL Code
-``verilog
+```verilog
 module counter (
     input clk,
     input rst_n,
@@ -280,11 +281,14 @@ always @(posedge clk or negedge rst_n) begin
     else q <= q + 1;
 end
 endmodule
+```
 
 💻 Commands
+```
 iverilog -o tb_counter.vvp tb_counter.v counter.v
 vvp tb_counter.vvp
 gtkwave counter.vcd
+```
 
 📝 Notes
 
@@ -295,19 +299,20 @@ Used in simulation, synthesis, and verification
 
 # 📘 `week1/day03_verilog_intro.md`
 
-``markdown
 # ⚡ Day 03 — Verilog Introduction  
 
+```markdown
 ✅ Started learning Verilog HDL  
 ✅ Wrote first basic logic gate  
-
+```
 
 
 💻 Example — AND Gate
-``verilog
+```verilog
 module and_gate(input a, input b, output y);
     assign y = a & b;
 endmodule
+```
 
 📝 Notes
 
@@ -318,19 +323,19 @@ Supports modules, ports, operators, and testbenches
 
 # 📘 `week1/day04_simulation.md`
 
-``markdown
 # ⚡ Day 04 — Simulation  
 
+```markdown
 ✅ Ran Verilog simulation using Icarus Verilog  
 ✅ Viewed waveforms in GTKWave  
-
----
+```
 
 ## 💻 Commands
-``bash
+```bash
 iverilog -o tb_and.vvp tb_and.v and_gate.v
 vvp tb_and.vvp
 gtkwave dump.vcd
+```
 
 📝 Notes
 
@@ -344,12 +349,11 @@ Waveform viewing helps debug signals
 
 # 📘 `week1/day05_assignment.md`
 
-``markdown
 # ⚡ Day 05 — Assignment  
 
+```markdown
 🎯 Task: Implement basic logic gates in Verilog and simulate  
-
----
+```
 
 ## ✅ Gates
 | Gate | Done? |
@@ -363,11 +367,12 @@ Waveform viewing helps debug signals
 
 
 ## 💻 Example — OR Gate
-``verilog
+
+```verilog
 module or_gate(input a, input b, output y);
     assign y = a | b;
 endmodule
-
+```
 📝 Notes
 
 Designed gates using continuous assignment
