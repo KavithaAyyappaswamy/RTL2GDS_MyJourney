@@ -72,3 +72,6 @@ Also grateful to the supporting organizations:
 🔜 Week 1+ – RTL design, synthesis, floorplanning, PnR, signoff, and tapeout readiness  
 
 Stay tuned – the journey continues! 🌟  
+
+
+
